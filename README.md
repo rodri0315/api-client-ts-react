@@ -1,5 +1,9 @@
 # Front End Assessment
 
+Getting Started:
+
+Clone or fork this repository to get the starting template for the assessment. Ensure all needed npm packages are installed before getting started.
+
 ## Overview and Objectives
 
 *** note ***
@@ -16,6 +20,8 @@ You will be consuming the Recipe Puppy API (http://www.recipepuppy.com/about/api
 - test coverage for added components are a plus
 
 We are looking to evaluate your front-end dev skills in React, JavaScript, HTML and CSS.
+
+*** Feel free to add any technologies you want to this project i.e. SASS, TypeScript, etc. ***
 
 ## What we are looking for
 - Approaches to pulling data from the API
