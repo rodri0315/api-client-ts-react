@@ -32,7 +32,7 @@ interface ItemInterface {
 function App() {
 
   const [term, setTerm] = useState<string>('')
-  const [recipes, setRecipes] = useState<ItemInterface[]>([])
+  const [data, setData] = useState<ItemInterface[]>([])
 
   useEffect(() => {
     if (term) {
@@ -47,7 +47,7 @@ function App() {
       },
     })
     .then(({ data }) => {
-      setRecipes(data.results)
+      setData(data.results)
     })
   }, [term]);
 
@@ -61,7 +61,7 @@ function App() {
       <SearchInput term={term} onInputChange={onInputChange} />
       {
         term ?
-          <ItemList items={recipes} /> :
+          <ItemList items={data} /> :
           <h2 className={"text-center"}>No Results yet!</h2>
       }
     </Container>
