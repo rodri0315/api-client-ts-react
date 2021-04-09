@@ -58,7 +58,7 @@ function App() {
   return (
     <Container className="App">
       <h1 className="text-center">Star Wars Vehicle Search</h1>
-      <SearchInput term={term} onInputChange={onInputChange} />
+      <SearchInput onInputChange={onInputChange} />
       {
         term ?
           <ItemList items={data} /> :
